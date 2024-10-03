@@ -67,15 +67,6 @@ To stop and remove all services, networks, and volumes, run:
 docker-compose down
 ```
 
-### Customization
-
-You can customize the Docker Compose file as needed. For instance, to persist Postgres data across restarts, add a volume for the Postgres service:
-
-```yaml
-volumes:
-  - postgres_data:/var/lib/postgresql/data
-```
-
 ## Python Script
 
 The Python script generates fake financial transaction data using the `faker` library and inserts it into the PostgreSQL database. This data can be used to simulate a dynamic environment for testing CDC with Debezium and Kafka.
